@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matcha</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+
+<body>
+<section class="fixed-header">
   <header class="header">
+    <!--Logo con link a la página principal-->
     <a href="./index.html" class="logo">
       <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Logo">
     </a>
     
     <nav class="navbar">
       <ul>
-        <li>Products</li>
-        <li>Templates</li>
-        <li>Pricing</li>
-        <li>Customers</li>
-        <li>Blog</li>
-        <li>Resources</li>
+        <li class="menu-item">Platform</li>
+        <li class="menu-item">Pricing</li>
+        <li class="menu-item">Customers</li>
+        <li class="menu-item">Resources</li>
+        <li class="menu-item">About</li>
       </ul>
     </nav>
 
@@ -30,34 +32,125 @@
       <button>Get a Demo</button>
     </div>
   </header>
+</section>
+  
+  <br>
+  <h1>Mi primer etiqueta</h1>  
+  <h2>Mi primer etiqueta</h2>
+  <h3>Mi primer etiqueta</h3>
+  <h4>Mi primer etiqueta</h4>
+  <h5>Mi primer etiqueta</h5>
+  <h6>Mi primer etiqueta</h6>
 
-  <h1> Mi primer etiqueta   </h1>  
-  <h2>Lorem ipsum</h2>
-  <h3>Lorem ipsum</h3>
-  <h4>Lorem ipsum</h4>
-  <h5>Lorem ipsum</h5>
-  <h6>Lorem ipsum</h6>
-
-  <p>¿Cómo harías para agregar el texto promocional? 
-¿Te has dado cuenta que dentro del mismo texto hay algunas 
-palabras que tienen un <b>mayor énfasis</b>  (formato en negrita)? 
-¿Cómo harías para cambiar el formato de solo esas palabras?</p>
+  <p>
+    ¿Cómo harías para agregar el texto promocional? ¿Te has dado cuenta que dentro del mismo texto hay algunas 
+    palabras que tienen un <b>mayor énfasis</b>  (formato en negrita)? 
+    ¿Cómo harías para cambiar el formato de solo esas palabras?
+  </p>
 
 <!-- <input type="email"> -->
 <form action="">
-    <input type="email"><br>
-    <button type="submit">Enviar &rarr;</button><br><br>
+    <input type="email" placeholder="Enter email address"><br>
+    <button type="submit">Try it now &rarr;</button><br><br>
 </form>
-<img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Logo" >
+
+<img lt="Logo de matcha" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png">
+
+<section class="promo-section">
+
+  <article class="explanatory-video">
+    <video controls
+      poster="https://img2.rtve.es/i/?w=1200&i=https://img2.rtve.es/imagenes/foto-abbey-road-cumple-50-anos/1565264925747.jpg" width="450" height="350">
+      <source type="video/webm"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" /> 
+      <source type="video/mp4"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" />
+    </video>
+    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="how it works">
+  </article>
+  
+
+  <article class="publish">
+    <h3>Publish to your blog in minutes, not hours.</h3>
+    <p>
+      Your blog is your most powerful asset to build, engage, and retain a loyal 
+      audience. But you don’t have hours to create content that may or may not work. 
+      With Matcha, instantly publish from our library of 10,000+professionally written 
+      articles and build your email list faster with our powerful conversion tool.
+    </p>
+    <form>
+      <p>Start publishing today:</p>
+      <div>
+        <input type="text" placeholder="Enter email" />
+        <button>Start My Trial</button>
+      </div>
+    </form>
+  </article>
+</section>
+
+<form class="signup">
+  <h2>Identifiquese</h2>
+  <label for="Name">Name:</label>
+  <input type="text" id="Name" placeholder="Name"><br><br>
+  <label for="LastName">Last Name:</label>
+  <input type="text" id="LastName" placeholder="Last Name"><br><br>
+  <label for="Age">Age:</label>
+  <input type="number" id="Age" placeholder="Age" min="18" max="64"><br><br>
+  <label for="Email">Email:</label>
+  <input type="email" id="Email" placeholder="Correo"><br><br>
+  <label for="Password">Password:</label>
+  <input type="password" id="Password" placeholder="Contraseña"><br><br>
+  <button type="submit">Enviar &rarr;</button>
+</form>
+
+<section class="postwork">
+  <article class="overview">
+    <h2>Growing ecommerce brands rely on Matcha.</h2>
+    <p>
+      Are you tired of wasting time publishing blog articles to only see a
+      trickle of traffic and no impact on sales? Join hundreds of business
+      owners and ecommerce marketers who rely on Matcha for quality content
+      and consistent performance from their blogs.
+    </p>
+    <button>
+      Who Uses Matcha?
+    </button>
+    <figure>
+      <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands"/>
+    </figure>
+  </article>
+
+  <article class="study-cases">
+    <div class="worker">
+      <figure>
+        <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="Everly worker"/>
+      </figure>
+    </div>
+
+    <div class="company">
+      <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt="Everly"/>
+    </div>
+    
+    <div class="description">
+      <h4>Everly</h4>
+      <h3>
+       Early-Stage CPG Brand Increases Lead Conversion 20x,
+       Ecommerce Revenue 20%
+      </h3>
+
+    </div>
 
 
-<h2>Identifiquese</h2>
-Nombre:  <input type="text" placeholder="Nombre"><br><br>
-Apellido: <input type="text" placeholder="Apellido"><br><br>
-Edad: <input type="number" placeholder="Edad" min="18" max="64"><br><br>
-Correo: <input type="email" placeholder="Correo"><br><br>
-Contraseña: <input type="password" placeholder="Contraseña"><br><br>
-<button type="submit">Enviar &rarr;</button>
+    <div class="result">
+      <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png" alt="Cart icon"/>
+      <p>22% of monthly revenue influenced by content</p>
+    </div>
+
+    <button>See Case Study</button>
+
+  </article>
+
+</section>
 
 
 
