@@ -2,6 +2,7 @@ body {
   background-color: #fffbf7;
   /*background-image: url('https://st.depositphotos.com/1597597/2376/v/600/depositphotos_23765751-stock-illustration-leaf-pattern.jpg');*/
   margin: 0;
+ 
 }
 
 h1 {
@@ -10,9 +11,6 @@ h1 {
   margin-top: 100px;
 }
 
-h2 {
-  color: #3e60a5;
-}
 
 p {
   color: #8b8b8bcc;
@@ -162,8 +160,80 @@ li {
 }
 
 
+.features {
+  /*display: grid;*/
+  /*grid-template-columns: 300px 300px;*/
+  /*grid-template-columns: repeat(2,300px);*/
+  /*grid-template-columns: 500px 1fr;*/
+  /*grid-template-columns: 1fr 1fr;*/
+}
+
+.features {
+  display: grid;
+  background-color: #025157;
+  /*grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);*/
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 5% 10%;
+  
+}
+
+.feature-art {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  margin: 15px;
+  overflow: hidden;
+  height: 320px;
+  
+}
+
+.feature-art .content {
+  padding: 30px 20px 40px 40px;
+  flex: 2;
+}
+
+.feature-art .content h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+
+}
+
+.feature-art .content a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.feature-art .image{
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -10px;
+}
+
+.feature-art .image img {
+  width: 400px;
+  height: 300px;
+}
+
+.feature-art .content img {
+  width: 50px;
+}
+
+.feature-art .content p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
 
 
+
+/*------------------------------*/
 .postwork {
   background-color: #a1d683;
   padding: 5% 15%;
@@ -265,7 +335,7 @@ li {
 
 .postwork .study-cases .description h4 {
   color: #025157;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 12px;
@@ -310,3 +380,91 @@ li {
   margin-right: 20px;
 }
 
+/*-------------------------------*/
+
+.how-it-works {
+  text-align: center;
+}
+.how-it-works h3 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+.how-it-works p {
+  color: #46484c;
+  font-size: 1.1rem;
+  padding: 0 25%;
+  margin-top: -.7rem;
+}
+.how-it-works a {
+  text-decoration: none;
+  color: #67b54b;
+}
+.how-it-works button {
+  color: #fff;
+  background-color: #025157;
+  padding: 12px 14px 12px 14px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: .9em;
+}
+.how-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 4rem 11rem;
+}
+.how-card {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: .7px;
+  border-radius: 5px;
+  max-width: 17rem;
+  overflow: hidden;
+}
+.how-card-img {
+  display: flex;
+  height: 55%;
+}
+.how-card-img .how-card-image {
+  max-width: 100%;
+  position: relative;
+  right: 2em;
+}
+.how-card-img .how-card-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin: 2rem 0 0 1.5rem;
+  position: relative;
+}
+.how-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how-card .how-card-text h5 {
+  text-align: center;
+  font-family: "Alegreya", sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #025157;
+}
+.how-card .how-card-text p {
+  text-align: left;
+  font-size: .9em;
+  align-self: flex-start;
+  margin-left: -3.5em;
+  margin-right: -3.5em;
+  margin-bottom: 2em;
+}
+.how-card .how-card-text a {
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 1em;
+  font-weight: 600;
+}
